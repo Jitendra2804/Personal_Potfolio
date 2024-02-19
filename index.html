@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Website - Jitendra Gupta</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/40c4e32c5d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="photo/logo.png" class="logo" width="100" height="100">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p> Fresher </p>
+            <h1>Hi, I'm <span>Jitendra Gupta</span><br> From Mumbai</h1>
+        </div>
+    </div>
+</div>
+  <!-------------------------------------------------about--------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo/user1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am [Jitendra Nagendra Gupta], a passionate [Electronics ANd Telecommunication Engineering] 
+                        student currently pursuing my degree at [Mumbai University].
+                        Eager to contribute to the dynamic world of technology,
+                        I am building a solid foundation in key engineering concepts 
+                        and maintaining a commitment to continuous learning.
+                        
+                        My academic journey has provided me with a strong understanding
+                        of [Your Engineering Discipline], and I am excited about the 
+                        prospect of applying this knowledge in a professional setting.
+                        With a focus on collaboration and a dedication to growth, 
+                        I am actively seeking opportunities in a challenging environment.
+                        
+                        I am enthusiastic about contributing to innovative solutions and
+                        making a meaningful impact in the field of technology.
+                        Let's connect to discuss how my passion and academic pursuits align
+                        with the goals of your organization. Thank you for considering me
+                        as a potential asset to your team.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('internships')">Internships</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span><br>Developer</li>
+                                <li><span>Sql</span><br>Developer</li>
+                                <li><span>Power BI</span><br>Developer</li>
+                                <li><span>Data Analyst</span><br>Data Analysis, Data Visualization</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="internships">
+                            <ul>
+                                <li><span>10/12/2022-31/01/23</span><br>Python Developer</li>
+                                <li><span>01/01/2023-01/02/2023</span><br>Python Development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2024</span><br>E&TC Mumbai University</li>
+                                <li><span>2019</span><br>HSC Maharashtra</li>
+                                <li><span>2017</span><br>SSc Maharashtra</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    
+
+</div>
+<!----------------Potfolio------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="photo/pot1.png">
+                <div class="layer">
+                    <h3>Web Scrapping</h3>
+                    <p>From any Website we can extract the data</p>
+                    <a href="#"><i class="fa-solid fa-file-lines"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="photo/pot2.png">
+                <div class="layer">
+                    <h3>Python Developer</h3>
+                    <p>Do everything from web or game development to quantitative analysis, to creating new programming languages</p>
+                    <a href="#"><i class="fa-solid fa-file-lines"></i></a>
+                </div>
+            </div>
+            </div>
+            <div class="work">
+                <img src="photo/pot3.png">
+                <div class="layer">
+                    <h3>Python Development</h3>
+                    <p>Used to build websites and software, automate tasks, and conduct data analysis</p>
+                    <a href="#"><i class="fa-solid fa-file-lines"></i></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!---------------------Contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> myselfjitendra28@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 7900154804</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jitendra-gupta-73207b248/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/Jitendra041999"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/Jitendra2804"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="photo/Jitendra Gupta (Resume).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Jitendra. Made with <i class="fa-solid fa-heart"></i> by Refrence from GreatStack</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxDdsUc_iH1PYvlt3bKbTWWIU0edrB6-WwI9mYctCMkS9W6frVmzcFGyM3i5ZlS_hnq/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Messgae sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
